@@ -1,0 +1,122 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &231169245174659088
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 231169245174659093}
+  - component: {fileID: 231169245174659092}
+  - component: {fileID: 231169245174659091}
+  - component: {fileID: 231169245174659090}
+  - component: {fileID: 231169245174659089}
+  m_Layer: 0
+  m_Name: SpaceBrewServer
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &231169245174659093
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231169245174659088}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &231169245174659092
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231169245174659088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1df2c002da2c0c747ab859e087d21181, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  clientName: UnitySpacebrewServer
+  descriptionText: Unity Server for SpaceBrew
+  isAdmin: 1
+  isServer: 1
+  useDefaultPort: 1
+  useConfigManager: 0
+  serverAddress: 127.0.0.1
+  serverPort: 9000
+  publishers:
+  - name: pubServerMove
+    pubType: 1
+    msgType: 1
+  - name: pubServerShoot
+    pubType: 1
+    msgType: 2
+  - name: pubServerDefault
+    pubType: 1
+    msgType: 0
+  subscribers:
+  - name: subServerMove
+    subType: 1
+    msgType: 1
+  - name: subServerShoot
+    subType: 1
+    msgType: 2
+  - name: subServerDefault
+    subType: 1
+    msgType: 0
+--- !u!114 &231169245174659091
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231169245174659088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 275c80d86a2508e46afc254dd2b2f74d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &231169245174659090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231169245174659088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f00393d72fb432046ba9089c11284ae4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useNodeEmbedded: 1
+  useNodeDefault: 1
+  nodePath: 
+  useScriptPathDefault: 0
+  scriptPath: .spacebrew
+  scriptName: node_server_forever.js
+  scriptArguments: --nopersist
+  useCommunication: 0
+  communicationController: {fileID: 0}
+--- !u!114 &231169245174659089
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 231169245174659088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549dd434e38709a48b85b26fbf0c7653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messageReceiver: {fileID: 0}
