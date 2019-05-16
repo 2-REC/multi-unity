@@ -3,18 +3,20 @@
 
 public class NodeJs : MonoBehaviour {
 
-	public static readonly string NODE_DEFAULT_PATH = ".node";
+    public static readonly string NODE_DEFAULT_PATH = ".node";
 //TODO: Linux? Android?
-	#if UNITY_STANDALONE_WIN
-	private static readonly string NODE_BIN = "node.exe";
-	#endif
-	#if UNITY_STANDALONE_OSX
+    #if UNITY_STANDALONE_WIN
+    private static readonly string NODE_BIN = "node.exe";
+    #elif UNITY_STANDALONE_OSX
 //TODO: change
 //=> ADD IOS BINARY (portable?)
-	private static readonly string NODE_BIN = "node";
-	#endif
+    private static readonly string NODE_BIN = "node";
+    #else
+//TODO: change
+    private static readonly string NODE_BIN = "node";
+    #endif
 
-	public static readonly string SCRIPT_DEFAULT_PATH = ".script";
+    public static readonly string SCRIPT_DEFAULT_PATH = ".script";
 
 
     public bool useNodeEmbedded = true;

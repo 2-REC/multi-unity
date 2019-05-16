@@ -23,8 +23,8 @@ public class SpacebrewEvents : MonoBehaviour {
 
     public void OnSpacebrewEvent(SpacebrewClient.SpacebrewMessage _msg) {
 //TODO: REMOVE THIS PRINT - DEBUG PURPOSE
-print("Received Spacebrew Message (from: " + _msg.clientName + ")");
-print("name: " + _msg.name + ", type: " + _msg.type + ", value: " + _msg.value);
+//print("Received Spacebrew Message (from: " + _msg.clientName + ")");
+//print("name: " + _msg.name + ", type: " + _msg.type + ", value: " + _msg.value);
         messageReceiver.Receive(_msg);
     }
 
@@ -32,20 +32,20 @@ print("name: " + _msg.name + ", type: " + _msg.type + ", value: " + _msg.value);
     // Sends a boolean message to SpaceBrew
     public void SendBool(string pubName, bool value) {
         string strValue = value ? "true" : "false";
-        print("Sending Spacebrew Message: " + strValue + " (BOOLEAN)");
+//        print("Sending Spacebrew Message: " + strValue + " (BOOLEAN)");
         sbClient.sendMessage(pubName, "boolean", strValue);
     }
 
     // Sends a range message to SpaceBrew
     public void SendRange(string pubName, int value) {
         string strValue = value.ToString();
-        print("Sending Spacebrew Message: " + strValue + " (RANGE)");
+//        print("Sending Spacebrew Message: " + strValue + " (RANGE)");
         sbClient.sendMessage(pubName, "range", strValue);
     }
 
     // Sends a string message to SpaceBrew
     public void SendString(string pubName, string value) {
-        print ("Sending Spacebrew Message: " + value + " (STRING)");
+//        print ("Sending Spacebrew Message: " + value + " (STRING)");
         sbClient.sendMessage(pubName, "string", value);
     }
 

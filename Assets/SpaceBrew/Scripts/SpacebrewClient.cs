@@ -174,7 +174,7 @@ public class SpacebrewClient : MonoBehaviour {
         if (isAdmin) {
             conn.OnMessage += (sender, e) => {
 //TODO: REMOVE THIS PRINT - DEBUG PURPOSE
-print ("onMessage: " + e.Data);
+//print ("onMessage: " + e.Data);
 
                 // parse the incoming json message from spacebrew
                 var N = JSON.Parse(e.Data);
@@ -206,7 +206,7 @@ print("remove-route message - disconnected client");
         else {
             conn.OnMessage += (sender, e) => {
 //TODO: REMOVE THIS PRINT - DEBUG PURPOSE
-print ("onMessage: " + e.Data);
+//print ("onMessage: " + e.Data);
 
                 // parse the incoming json message from spacebrew
                 var N = JSON.Parse(e.Data);
