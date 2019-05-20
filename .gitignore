@@ -47,5 +47,4 @@ sysinfo.txt
 # Crashlytics generated file
 Assets/StreamingAssets/crashlytics-build.properties
 
-# should add this? (doesn't seem to work...)
-#Assets/StreamingAssets/
+/Assets/StreamingAssets/.spacebrew/data/
