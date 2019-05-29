@@ -24,7 +24,7 @@ public class SpacebrewClient : MonoBehaviour {
         RANGE = 2
     };
 
-//TODO: move to separate class
+/*
 //=> Different values depending on game
     public enum MessageType {
         DEFAULT, //NONE
@@ -32,12 +32,14 @@ public class SpacebrewClient : MonoBehaviour {
         SHOOT,
         DESTROY
     };
+*/
+public List<string> messageTypes = new List<string>();
 
     [Serializable]
     public class Publisher {
         public string name;
         public DataType pubType;
-        public MessageType msgType;
+        public string msgType;
         //public string defaultValue;
     }
 
@@ -45,7 +47,7 @@ public class SpacebrewClient : MonoBehaviour {
     public class Subscriber {
         public string name;
         public DataType subType;
-        public MessageType msgType;
+        public string msgType;
     }
 
 
@@ -105,6 +107,14 @@ public class SpacebrewClient : MonoBehaviour {
     void Awake() {
         spacebrewNewMsgs = new List<SpacebrewMessage>();
         spacebrewMsgs = new List<SpacebrewMessage>();
+
+////////
+print("CLIENT - AWAKE");
+//TODO: check values for pubilshers & subscribers message types!
+print("types: " + messageTypes.Count);
+for (int i=0; i<messageTypes.Count; ++i)
+    print(messageTypes[i]);
+////////
 
         sbEvents = gameObject.GetComponentInParent<SpacebrewEvents>();
         if (sbEvents == null) {
@@ -679,8 +689,7 @@ print("pub " + count);
                 name = node["name"],
 //                pubType = GetDataType(node["type"].ToString()),
                 pubType = GetDataType(node["type"]),
-//                msgType = GetMessageType(node["msgType"].ToString()),
-                msgType = GetMessageType(node["msgType"])
+                msgType = node["msgType"]
             };
 
             publishers.Add(publisher);
@@ -702,8 +711,7 @@ print("sub " + count);
                 name = node["name"],
 //                subType = GetDataType(node["type"].ToString()),
                 subType = GetDataType(node["type"]),
-//                msgType = GetMessageType(node["msgType"].ToString()),
-                msgType = GetMessageType(node["msgType"])
+                msgType = node["msgType"]
             };
 
             subscribers.Add(subscriber);
@@ -731,7 +739,7 @@ print("STRING");
         }
         return dataType;
     }
-
+/*
     private static MessageType GetMessageType(string type) {
         MessageType msgType = MessageType.DEFAULT;
 print("get msg type " + type);
@@ -743,5 +751,5 @@ print("get msg type " + type);
         }
         return msgType;
     }
-
+*/
 }

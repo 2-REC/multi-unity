@@ -414,6 +414,42 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: messageTypes.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: publishers.Array.data[0].msgType
+      value: MOVE
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: publishers.Array.data[1].msgType
+      value: SHOOT
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: publishers.Array.data[2].msgType
+      value: <default>
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: subscribers.Array.data[0].msgType
+      value: MOVE
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: subscribers.Array.data[1].msgType
+      value: SHOOT
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: subscribers.Array.data[2].msgType
+      value: <default>
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: messageTypes.Array.data[0]
+      value: MOVE
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: messageTypes.Array.data[1]
+      value: SHOOT
+      objectReference: {fileID: 0}
     - target: {fileID: 11438994, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
       propertyPath: messageReceiver
       value: 

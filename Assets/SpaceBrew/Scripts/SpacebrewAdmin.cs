@@ -143,7 +143,7 @@ public class SpacebrewAdmin : MonoBehaviour {
     private void AddRoutes(Config config) {
         // client publishers
         foreach (Publisher publisher in config.publishers) {
-            if (publisher.msgType != MessageType.DEFAULT) {
+            if (sbClient.messageTypes.Contains(publisher.msgType)) {
                 foreach (Subscriber serverSubscriber in serverConfig.subscribers) {
                     if (serverSubscriber.msgType == publisher.msgType) {
                         AddRoute(false, config.clientName, publisher, config.remoteAddress, serverConfig.clientName, serverSubscriber, serverConfig.remoteAddress);
@@ -154,7 +154,7 @@ public class SpacebrewAdmin : MonoBehaviour {
 
         // client subscribers
         foreach (Subscriber subscriber in config.subscribers) {
-            if (subscriber.msgType != MessageType.DEFAULT) {
+            if (sbClient.messageTypes.Contains(subscriber.msgType)) {
                 foreach (Publisher serverPublisher in serverConfig.publishers) {
                     if (serverPublisher.msgType == subscriber.msgType) {
                         AddRoute(true, serverConfig.clientName, serverPublisher, serverConfig.remoteAddress, config.clientName, subscriber, config.remoteAddress);
