@@ -423,6 +423,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 231169245174659092, guid: 8e504e8fd2fa12b4995812e993586d18,
         type: 3}
+      propertyPath: publishers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 231169245174659092, guid: 8e504e8fd2fa12b4995812e993586d18,
+        type: 3}
+      propertyPath: subscribers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 231169245174659092, guid: 8e504e8fd2fa12b4995812e993586d18,
+        type: 3}
       propertyPath: publishers.Array.data[0].msgType
       value: MOVE
       objectReference: {fileID: 0}
@@ -460,6 +470,56 @@ PrefabInstance:
         type: 3}
       propertyPath: subscribers.Array.data[2].msgType
       value: <default>
+      objectReference: {fileID: 0}
+    - target: {fileID: 231169245174659092, guid: 8e504e8fd2fa12b4995812e993586d18,
+        type: 3}
+      propertyPath: publishers.Array.data[1].name
+      value: pubServerShoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 231169245174659092, guid: 8e504e8fd2fa12b4995812e993586d18,
+        type: 3}
+      propertyPath: publishers.Array.data[1].pubType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 231169245174659092, guid: 8e504e8fd2fa12b4995812e993586d18,
+        type: 3}
+      propertyPath: publishers.Array.data[2].name
+      value: pubServerDefault
+      objectReference: {fileID: 0}
+    - target: {fileID: 231169245174659092, guid: 8e504e8fd2fa12b4995812e993586d18,
+        type: 3}
+      propertyPath: publishers.Array.data[2].pubType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 231169245174659092, guid: 8e504e8fd2fa12b4995812e993586d18,
+        type: 3}
+      propertyPath: publishers.Array.data[0].name
+      value: pubServerMove
+      objectReference: {fileID: 0}
+    - target: {fileID: 231169245174659092, guid: 8e504e8fd2fa12b4995812e993586d18,
+        type: 3}
+      propertyPath: subscribers.Array.data[1].name
+      value: subServerShoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 231169245174659092, guid: 8e504e8fd2fa12b4995812e993586d18,
+        type: 3}
+      propertyPath: subscribers.Array.data[1].subType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 231169245174659092, guid: 8e504e8fd2fa12b4995812e993586d18,
+        type: 3}
+      propertyPath: subscribers.Array.data[2].name
+      value: subServerDefault
+      objectReference: {fileID: 0}
+    - target: {fileID: 231169245174659092, guid: 8e504e8fd2fa12b4995812e993586d18,
+        type: 3}
+      propertyPath: subscribers.Array.data[2].subType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 231169245174659092, guid: 8e504e8fd2fa12b4995812e993586d18,
+        type: 3}
+      propertyPath: subscribers.Array.data[0].name
+      value: subServerMove
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e504e8fd2fa12b4995812e993586d18, type: 3}

@@ -581,6 +581,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1431288092, guid: 2f5ce2ff833259a48a0f404777e81312, type: 3}
+      propertyPath: publishers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431288092, guid: 2f5ce2ff833259a48a0f404777e81312, type: 3}
+      propertyPath: subscribers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431288092, guid: 2f5ce2ff833259a48a0f404777e81312, type: 3}
       propertyPath: publishers.Array.data[0].msgType
       value: MOVE
       objectReference: {fileID: 0}
@@ -611,6 +619,46 @@ PrefabInstance:
     - target: {fileID: 1431288092, guid: 2f5ce2ff833259a48a0f404777e81312, type: 3}
       propertyPath: messageTypes.Array.data[1]
       value: SHOOT
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431288092, guid: 2f5ce2ff833259a48a0f404777e81312, type: 3}
+      propertyPath: publishers.Array.data[1].name
+      value: subServerShoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431288092, guid: 2f5ce2ff833259a48a0f404777e81312, type: 3}
+      propertyPath: publishers.Array.data[1].pubType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431288092, guid: 2f5ce2ff833259a48a0f404777e81312, type: 3}
+      propertyPath: publishers.Array.data[2].name
+      value: subServerDefault
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431288092, guid: 2f5ce2ff833259a48a0f404777e81312, type: 3}
+      propertyPath: publishers.Array.data[2].pubType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431288092, guid: 2f5ce2ff833259a48a0f404777e81312, type: 3}
+      propertyPath: publishers.Array.data[0].name
+      value: pubAdminMove
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431288092, guid: 2f5ce2ff833259a48a0f404777e81312, type: 3}
+      propertyPath: subscribers.Array.data[1].name
+      value: subAdminShoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431288092, guid: 2f5ce2ff833259a48a0f404777e81312, type: 3}
+      propertyPath: subscribers.Array.data[1].subType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431288092, guid: 2f5ce2ff833259a48a0f404777e81312, type: 3}
+      propertyPath: subscribers.Array.data[2].name
+      value: subAdminDefault
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431288092, guid: 2f5ce2ff833259a48a0f404777e81312, type: 3}
+      propertyPath: subscribers.Array.data[2].subType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1431288092, guid: 2f5ce2ff833259a48a0f404777e81312, type: 3}
+      propertyPath: subscribers.Array.data[0].name
+      value: subAdminMove
       objectReference: {fileID: 0}
     - target: {fileID: 1105933168, guid: 2f5ce2ff833259a48a0f404777e81312, type: 3}
       propertyPath: messageReceiver

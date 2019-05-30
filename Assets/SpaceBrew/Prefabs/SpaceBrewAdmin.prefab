@@ -45,6 +45,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1df2c002da2c0c747ab859e087d21181, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  messageTypes: []
   clientName: UnitySpacebrewAdmin
   descriptionText: Unity Admin Client for SpaceBrew
   isAdmin: 1
@@ -54,25 +55,13 @@ MonoBehaviour:
   serverAddress: 127.0.0.1
   serverPort: 9000
   publishers:
-  - name: pubAdminMove
+  - name: pubAdmin
     pubType: 1
-    msgType: 1
-  - name: pubAdminShoot
-    pubType: 1
-    msgType: 2
-  - name: pubAdminDefault
-    pubType: 1
-    msgType: 0
+    msgType: <default>
   subscribers:
-  - name: subAdminMove
+  - name: subAdmin
     subType: 1
-    msgType: 1
-  - name: subAdminShoot
-    subType: 1
-    msgType: 2
-  - name: subAdminDefault
-    subType: 1
-    msgType: 0
+    msgType: <default>
 --- !u!114 &1105933170
 MonoBehaviour:
   m_ObjectHideFlags: 0

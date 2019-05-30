@@ -419,6 +419,14 @@ PrefabInstance:
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: publishers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: subscribers.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
       propertyPath: publishers.Array.data[0].msgType
       value: MOVE
       objectReference: {fileID: 0}
@@ -449,6 +457,46 @@ PrefabInstance:
     - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
       propertyPath: messageTypes.Array.data[1]
       value: SHOOT
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: publishers.Array.data[1].name
+      value: pubClientShoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: publishers.Array.data[1].pubType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: publishers.Array.data[2].name
+      value: pubClientDefault
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: publishers.Array.data[2].pubType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: publishers.Array.data[0].name
+      value: pubClientMove
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: subscribers.Array.data[1].name
+      value: subClientShoot
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: subscribers.Array.data[1].subType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: subscribers.Array.data[2].name
+      value: subClientDefault
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: subscribers.Array.data[2].subType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11415470, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
+      propertyPath: subscribers.Array.data[0].name
+      value: subClientMove
       objectReference: {fileID: 0}
     - target: {fileID: 11438994, guid: b6a1a8f23a7832744ad06d7e307eaa68, type: 3}
       propertyPath: messageReceiver
