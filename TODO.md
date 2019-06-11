@@ -1,5 +1,9 @@
 # TODO
 
+- [ ] Fix problem of spacebrew server resending messages to admins
+    => an admin sending a message will receive it as well ... (can ignore it, but doubles the traffic uselessly)
+    => Should avoid (have server as a separate app?)
+
 - [ ] Complete/detail doc
 
 - [ ] Change "log" directory for Spacebrew
