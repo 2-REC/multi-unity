@@ -1,5 +1,11 @@
 # TODO
 
+## REPOSITORY
+- [ ] Restructure
+    - [ ] Move Unity files to sub directory ("project"?)
+    - [ ] Add documentation directory and files ("docs")
+
+
 ## BUG FIXES / TESTS
 - [ ] Fix problem of Spacebrew server resending messages to admins<br>
     - An admin sending a message will receive it as well ...
@@ -25,10 +31,6 @@
     ```
     node_server_forever.js > TEST.txt
     ```
-
-
-## DOCUMENTATION
-- [ ] Complete/detail doc<br>
 
 
 ## SETUP / CONFIG
