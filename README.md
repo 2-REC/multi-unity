@@ -14,6 +14,12 @@ In order to use the latest version, the projects should be downloaded separately
 It is possible to use external SpaceBrew server and Node.js depending on the used prefabs and their configuration (see below in the "Components" section).<br>
 
 
+## GETTING STARTED
+TODO!
+
+Import assets in project.
+
+
 ## COMPONENTS
 
 It is composed of components (prefabs).<br>
@@ -144,7 +150,3 @@ Example:<br>
         }
     }
     ```
-
-
-
-

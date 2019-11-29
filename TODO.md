@@ -1,9 +1,19 @@
 # TODO
 
 ## REPOSITORY
+- [ ] Publish changes to original "spacebrewUnity" repository?
 - [ ] Restructure
-    - [ ] Move Unity files to sub directory ("project"?)
-    - [ ] Add documentation directory and files ("docs")
+    - [x] Move Unity files to sub directory ("UnityMulti")
+    - [ ] Add documentation directory and files ("docs") (?)
+    - [x] Add "LICENSE.md" file
+        <br>=> MIT License (?)
+    - [x] Add "Spacebrew Admin" tool in "extras"
+- [x] Remove useless Unity directories:
+    <br>=> MAKE SURE IT IS OK!
+    - [x] Packages
+    - [x] ProjectSettings
+- [ ] Create and add package
+- [ ] Delete repo history
 
 
 ## BUG FIXES / TESTS
@@ -33,6 +43,11 @@
     ```
 
 
+## FEATURES
+- [ ] Handle the different subscribers in "SpacebrewClient" (currently ignored)
+    <br>=> Some already commented code, should start as base for dev/fix
+
+
 ## SETUP / CONFIG
 - [ ] Add some parameters handling for Spacebrew:<br>
     => Look at the different parameters:<br>
@@ -50,6 +65,7 @@
         <br>=> Redirect logs (or remove them)
         - Node.js
         - Spacebrew
+    - [ ] Determine where it is created when built
 
 
 - [ ] See about "PostprocessBuildPlayer" script, how can do similar in Windows (& Android?)
