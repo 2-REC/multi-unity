@@ -12,7 +12,7 @@
     <br>=> MAKE SURE IT IS OK!
     - [x] Packages
     - [x] ProjectSettings
-- [ ] Create and add package
+- [x] Create and add package
 - [ ] Delete repo history
 
 
