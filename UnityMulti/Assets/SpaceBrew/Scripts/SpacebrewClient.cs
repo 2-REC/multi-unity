@@ -605,7 +605,7 @@ print("REMOVE MESSAGE: " + message.ToString());
             clientName = message["clientName"]
         };
 //TODO: REMOVE THIS PRINT - DEBUG PURPOSE
-print(sbMsg);
+//print(sbMsg);
 //        spacebrewMsgs.Add(sbMsg);
         spacebrewNewMsgs.Add(sbMsg);
 //TODO: might be better to handle message directly instead of putting in messages queue?
@@ -634,7 +634,7 @@ print(sbMsg);
             //...
         }
         else if (message["message"] != null) {
-            print("\"message\" message - ignored");
+//            print("\"message\" message - ignored");
             //TODO: what to do? ignore?
             //...
         }

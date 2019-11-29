@@ -20,6 +20,8 @@ public class SpacebrewAdmin : MonoBehaviour {
     private List<Config> clientConfigs;
     private Dictionary<string, ClientRoutes> routeTable; // key: clientAddress, value: ClientRoutes (with keys: clientName)
 
+    private int nbConnections;
+
 
     private void Awake() {
         sbClient = gameObject.GetComponentInParent<SpacebrewClient>();
@@ -45,16 +47,21 @@ public class SpacebrewAdmin : MonoBehaviour {
         routeTable.Clear(); // should be useless
 
         clientConfigs.Clear();
+        nbConnections = 0;
+        print("Clear - nb connections:" + nbConnections);
 
 //TODO: clear server config!
         //...
     }
 
     public void OnConfig(Config config) {
+        print("OnConfig: " + config.clientName);
         if (serverConfig.clientName != config.clientName) {
             int index = clientConfigs.FindIndex(x => ((x.clientName == config.clientName) && (x.remoteAddress == config.remoteAddress)));
             if (index == -1) {
                 clientConfigs.Add(config);
+                ++nbConnections;
+                print("OnConfig - nb connections:" + nbConnections);
                 AddRoutes(config);
             }
             else {
@@ -137,6 +144,12 @@ public class SpacebrewAdmin : MonoBehaviour {
 //        Config config = clientConfigs.Find(x => ((x.clientName == clientName) && (x.remoteAddress == clientAddress)));
 //        clientConfigs.Remove(config);
         clientConfigs.RemoveAll(x => ((x.clientName == clientName) && (x.remoteAddress == clientAddress)));
+        --nbConnections;
+        print("OnRemove - nb connections:" + nbConnections);
+    }
+
+    public int GetNbConnections() {
+        return nbConnections;
     }
 
 
